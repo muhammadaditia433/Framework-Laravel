@@ -1,0 +1,7 @@
+# Use this workspace to collaborate
+workspace:
+  id: 6d1cdb8a-dc3d-4d37-8a71-7074a9084a0d
+
+localResources:
+  collections:
+    - ../Book_Sales_API_Tugas5.postman_collection.json
