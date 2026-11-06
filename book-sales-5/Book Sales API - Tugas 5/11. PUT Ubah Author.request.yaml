@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{base_url}}/api/authors/{{author_id}}"
+method: PUT
+headers:
+  Accept: application/json
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Habiburrahman El Shirazy",
+      "photo": "habiburrahman-baru.jpg",
+      "bio": "Bio sudah diubah."
+    }
+order: 11000

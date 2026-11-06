@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/api/transactions"
+method: POST
+headers:
+  Accept: application/json
+  Content-Type: application/json
+  Authorization: Bearer {{admin_token}}
+body:
+  type: json
+  content: |-
+    {
+      "book_id": 1
+    }
+order: 12000

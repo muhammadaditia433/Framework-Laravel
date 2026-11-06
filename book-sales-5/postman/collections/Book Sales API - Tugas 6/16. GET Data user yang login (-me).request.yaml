@@ -1,0 +1,8 @@
+$kind: http-request
+name: 16. GET Data user yang login (/me)
+url: "{{base_url}}/api/me"
+method: GET
+headers:
+  Accept: application/json
+  Authorization: Bearer {{admin_token}}
+order: 16000

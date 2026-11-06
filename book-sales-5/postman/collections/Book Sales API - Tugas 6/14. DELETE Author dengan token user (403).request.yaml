@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{base_url}}/api/authors/{{author_id}}"
+method: DELETE
+headers:
+  Accept: application/json
+  Authorization: Bearer {{user_token}}
+order: 14000

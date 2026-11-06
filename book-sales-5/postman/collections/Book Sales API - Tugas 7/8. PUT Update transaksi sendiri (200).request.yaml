@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/api/transactions/{{trx_id}}"
+method: PUT
+headers:
+  Accept: application/json
+  Content-Type: application/json
+  Authorization: Bearer {{customer_token}}
+body:
+  type: json
+  content: |-
+    {
+      "book_id": 2
+    }
+order: 8000

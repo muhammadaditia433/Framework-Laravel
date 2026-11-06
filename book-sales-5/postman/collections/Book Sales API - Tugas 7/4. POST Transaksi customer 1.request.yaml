@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{base_url}}/api/transactions"
+method: POST
+headers:
+  Accept: application/json
+  Content-Type: application/json
+  Authorization: Bearer {{customer_token}}
+body:
+  type: json
+  content: |-
+    {
+      "book_id": 1
+    }
+scripts:
+  - type: afterResponse
+    code: pm.collectionVariables.set("trx_id", pm.response.json().data.id);
+    language: text/javascript
+order: 4000

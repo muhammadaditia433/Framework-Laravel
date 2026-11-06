@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{base_url}}/api/transactions/{{trx_id}}"
+method: DELETE
+headers:
+  Accept: application/json
+  Authorization: Bearer {{customer_token}}
+order: 13000

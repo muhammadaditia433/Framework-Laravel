@@ -1,0 +1,8 @@
+$kind: collection
+description: ""
+variables:
+  base_url: http://127.0.0.1:8000
+  user_token: ""
+  admin_token: ""
+  genre_id: ""
+  author_id: ""

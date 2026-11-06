@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{base_url}}/api/authors"
+method: POST
+headers:
+  Accept: application/json
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Habiburrahman El Shirazy",
+      "photo": "habiburrahman.jpg",
+      "bio": "Novelis Indonesia, penulis Ayat-Ayat Cinta."
+    }
+scripts:
+  - type: afterResponse
+    code: pm.collectionVariables.set("author_id", pm.response.json().data.id);
+    language: text/javascript
+order: 9000

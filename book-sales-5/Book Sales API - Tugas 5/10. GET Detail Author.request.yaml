@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/api/authors/{{author_id}}"
+method: GET
+headers:
+  Accept: application/json
+order: 10000

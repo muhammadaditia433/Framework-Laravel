@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{base_url}}/api/transactions"
+method: GET
+headers:
+  Accept: application/json
+  Authorization: Bearer {{customer_token}}
+order: 9000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{base_url}}/api/genres/{{genre_id}}"
+method: DELETE
+headers:
+  Accept: application/json
+  Authorization: Bearer {{admin_token}}
+order: 11000

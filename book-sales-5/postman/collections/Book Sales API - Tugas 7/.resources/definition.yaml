@@ -1,0 +1,8 @@
+$kind: collection
+description: ""
+variables:
+  base_url: http://127.0.0.1:8000
+  customer_token: ""
+  customer2_token: ""
+  admin_token: ""
+  trx_id: ""

@@ -4,4 +4,11 @@ workspace:
 
 localResources:
   collections:
-    - ../Book_Sales_API_Tugas5.postman_collection.json
+    - ../Book Sales API - Tugas 5
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/Book Sales API - Tugas 7: 8ae7e832-6320-431d-b389-efcae961eb04
+    ../postman/collections/Book Sales API - Tugas 6: 4500ce3a-9c3b-467d-a3d9-0af625484bdd

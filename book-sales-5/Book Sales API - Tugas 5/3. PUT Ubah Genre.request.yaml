@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/api/genres/{{genre_id}}"
+method: PUT
+headers:
+  Accept: application/json
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Misteri Baru",
+      "description": "Deskripsi genre sudah diubah."
+    }
+order: 3000

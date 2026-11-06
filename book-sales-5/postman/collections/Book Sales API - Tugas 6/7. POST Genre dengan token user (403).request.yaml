@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{base_url}}/api/genres"
+method: POST
+headers:
+  Accept: application/json
+  Content-Type: application/json
+  Authorization: Bearer {{user_token}}
+body:
+  type: json
+  content: |-
+    {
+      "name": "Misteri",
+      "description": "Genre yang berisi teka-teki dan penyelidikan."
+    }
+order: 7000
